@@ -2,9 +2,160 @@
 
 html{
     height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* ログイン */
+
+header {
+    text-align: center;
+}
+header img {
+    max-height: 65px;
+}
+
+header p {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 50px;
 }
 
 body{
     height: 100%;
-    background: #186AC9;
+    margin: 0;
+    background: linear-gradient(to bottom, #186AC9 30%, yellow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial,sans-serif;
 }
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 250px;
+    text-align: center;
+}
+
+.added-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 295px;
+    text-align: center;
+}
+
+.container p, h2 {
+    color: white;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.added-container {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.added-welcome {
+    margin-bottom: 50px;
+}
+
+.added-container .btn {
+    color: #c53030;
+}
+
+.container li {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container ul {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container label {
+    color: white;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.container .btn {
+    background-color: #e63946;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 40px;
+}
+
+.login-link {
+    background-color: #e63946;
+
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-bottom: 20px;
+    margin-right: auto;
+}
+
+.login-link:hover {
+    text-decoration: none;
+}
+
+.added-username, .added-welcome {
+    font-weight: bold;
+}
+
+.login-go {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    display: block;
+    text-align: left;
+}
+.btn:hover {
+    background-color: #c53030;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* 新規登録 */
+
+
+/* 登録完了画面 */
