@@ -34,7 +34,7 @@ body{
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -43,7 +43,7 @@ body{
 }
 
 .added-container {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -149,7 +149,7 @@ input[type="password"] {
 
 a {
     color: white;
-    text-decoration: underline;
+    text-decoration: underl0;
 }
 a:hover {
     text-decoration: underline;
