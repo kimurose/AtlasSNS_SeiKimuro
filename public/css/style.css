@@ -212,6 +212,7 @@ header{
 
 .following-list, .follower-list {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .following-list h2, .follower-list h2 {

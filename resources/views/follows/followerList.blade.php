@@ -4,6 +4,10 @@
 
   <div class="follower-list">
   <h2>フォロワーリスト</h2>
+   <div style="
+    display: flex;
+    width: 75%;
+    flex-wrap: wrap;">
     @if($followers->isEmpty())
       <p>フォロワーはいません。</p>
     @else
@@ -15,6 +19,7 @@
         </div>
       @endforeach
     @endif
+  </div>
   </div>
 
 <div id="posts-list">

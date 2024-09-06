@@ -31,7 +31,7 @@
                   <span>{{ $post->user->username }}</span>
                   {{ $post->created_at }}
                 </div>
-                <div class="post-content">{{ $post->post }}</div>
+                <div class="post-content">{!! nl2br(e($post->post)) !!}</div>
                 <!-- 自分の投稿のみ削除ボタンを表示 -->
                 @if ($post->user_id == Auth::id())
                 <!-- 編集ボタン -->

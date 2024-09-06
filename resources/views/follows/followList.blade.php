@@ -4,13 +4,18 @@
 
 <div class="following-list">
   <h2>フォローリスト</h2>
-  @foreach ($followingUsers as $user)
-    <div class="following-item">
-      <a href="{{ url('profile/' . $user->id) }}">
-        <img src="{{ asset('images/' .$user->images) }}" alt="Icon">
-      </a>
-    </div>
-  @endforeach
+  <div style="
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;">
+    @foreach ($followingUsers as $user)
+      <div class="following-item">
+        <a href="{{ url('profile/' . $user->id) }}">
+          <img src="{{ asset('images/' .$user->images) }}" alt="Icon">
+        </a>
+      </div>
+    @endforeach
+  </div>
 </div>
 
 <div id="posts-list">
@@ -25,7 +30,7 @@
 
           <td class="post-info">
                 <div class="post-header">
-                <a href="{{ url('/profile/' . $user->id) }}">
+                <a href="{{ url('/profile/' . $post->user->id) }}">
                   <img src="{{ asset('images/' .$post->user->images) }}" alt="Icon">
                 </a>
                   <span>{{ $post->user->username }}</span>
