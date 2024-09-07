@@ -36,7 +36,7 @@
                   <span>{{ $post->user->username }}</span>
                   {{ $post->created_at }}
                 </div>
-                <div class="post-content">{{ $post->post }}</div>
+                <div class="post-content">{!! nl2br(e($post->post)) !!}</div>
             </td>
         </tr>
       @endforeach
